@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2011-2017 Karliuka Vitalii(karliuka.vitalii@gmail.com)
+ * 
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+	<!--
+	event sales_order_load_after
+	-->	    
+    <event name="sales_order_load_after">
+        <observer name="faonni_ordermark" instance="Faonni\OrderMark\Observer\OrderLoadObserver" />
+    </event>                 
+</config>
