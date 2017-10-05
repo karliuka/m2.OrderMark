@@ -53,7 +53,8 @@ class InstallData implements InstallDataInterface
         $salesInstaller->addAttribute('order', 'admin_id', [
             'type'    => Table::TYPE_INTEGER, 
             'visible' => true, 
-            'default' => 0
+            'default' => 0,
+            'grid'    => true
         ]);
     }
 }
